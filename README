@@ -1,29 +1,20 @@
+git clone https://github.com/jgawrilo/butler_install.git
+
 # Core NLP Service
-docker pull motiz88/corenlp
-docker run -p 9000:9000 --name coreNLP --rm -i -t motiz88/corenlp
+cd docker-butler_corenlp
+docker build -t mycorenlp:mycorenlp .
+docker run -p 9000:9000 --name coreNLP --rm -i -t mycorenlp:mycorenlp
 
 # Elasticsearch
 docker pull docker.elastic.co/elasticsearch/elasticsearch:5.4.1
 docker run -p 9200:9200 -e "http.host=0.0.0.0" -e "transport.host=127.0.0.1" -e "xpack.security.enabled=false" --name elastic docker.elastic.co/elasticsearch/elasticsearch:5.4.1
 
 # Butler Server
-git clone https://github.com/jgawrilo/butler_server.git
-pip install -r requirements.txt
-./nltk.sh
-python utils.py create
-
-docker run -p 5000:5000 --link elastic:elastic --link coreNLP:coreNLP -i -t butler_server
-
-# start it
-python server.py
-
+cd ../docker-butler_server
+docker build -t butler_server:butler_server .
+docker run -p 5000:5000 --link elastic:elastic --link coreNLP:coreNLP -i -t --name butler_s butler_server:butler_server
 
 # Butler Web App
-git clone https://bitbucket.org/blueridgedynamics/butler.git
-npm install -g bower gulp
-npm install
-bower install
-gulp build
-
-# start it
-npm start
+cd ../docker-butler_app
+docker build -t butler_app:butler_app .
+docker run --rm -it -p 3000:3000 --link butler_s --name butler_a butler_app:butler_app
