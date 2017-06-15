@@ -1,7 +1,3 @@
-git clone https://github.com/jgawrilo/butler_install.git
-
-cd butler_install
-
 # Core NLP Service
 cd docker-butler_corenlp
 docker build -t mycorenlp:mycorenlp .
