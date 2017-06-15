@@ -1,25 +1,6 @@
-git clone https://github.com/jgawrilo/butler_install.git
-
-cd butler_install
-
-# Core NLP Service
-cd docker-butler_corenlp
-docker build -t mycorenlp:mycorenlp .
-
-# Elasticsearch
-docker pull docker.elastic.co/elasticsearch/elasticsearch:5.4.1
-
-# Butler Server
-cd ../docker-butler_server
-docker build -t butler_server:butler_server .
-
-# Butler Web App
-cd ../docker-butler_app
-docker build -t butler_app:butler_app .
-
-
-
 docker run --rm -p 9000:9000 --name coreNLP -t mycorenlp:mycorenlp &
+
+sleep 5
 
 wget --post-data 'The quick brown fox jumped over the lazy dog.' 'localhost:9000/?properties={"annotators":"tokenize,ssplit,pos,ner,depparse,openie","outputFormat":"json"}' -O -
 --2017-06-13 13:10:30--  http://localhost:9000/?properties=%7B%22annotators%22:%22tokenize,ssplit,pos,ner,depparse,openie%22,%22outputFormat%22:%22json%22%7D

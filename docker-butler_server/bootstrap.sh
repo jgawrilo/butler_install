@@ -20,7 +20,8 @@ cat <<EOT >> config.json
     "nlp_service":"http://coreNLP:9000",
     "port":5000,
     "platform":"MAC",
-    "butler_index":"butler"
+    "butler_index":"butler",
+    "chrome_loc":"/usr/bin/google-chrome"
 }
 EOT
 

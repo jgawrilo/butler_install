@@ -16,4 +16,4 @@ ENV PORT 9000
 
 EXPOSE $PORT
 
-CMD java -mx8g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -timeout 25000 -threads 2
+CMD java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -timeout 25000 -threads 1
