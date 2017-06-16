@@ -27,7 +27,6 @@ EOT
 
 pip install -r requirements.txt
 ./nltk.sh
-python utils.py create
 
 pip install --upgrade beautifulsoup4
 
@@ -48,6 +47,4 @@ chmod +x chromedriver
 mv -f chromedriver /usr/local/share/chromedriver
 ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
-
-
 
