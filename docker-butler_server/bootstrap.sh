@@ -19,8 +19,10 @@ cat <<EOT >> config.json
     "es":"http://elastic:9200/",
     "nlp_service":"http://coreNLP:9000",
     "port":5000,
-    "platform":"MAC",
+    "platform":"Linux",
     "butler_index":"butler",
+    "start_num_pages":1,
+    "silos":[],
     "chrome_loc":"/usr/bin/google-chrome"
 }
 EOT

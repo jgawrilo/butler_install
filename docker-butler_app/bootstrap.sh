@@ -10,6 +10,7 @@ n stable
 
 git clone https://bitbucket.org/blueridgedynamics/butler.git
 cd butler
+git checkout develop
 
 cat <<EOT > config.js
 const path = require('path');
@@ -22,7 +23,7 @@ module.exports = {
       flag: 'us'
     },
     {
-      language: 'russia',
+      language: 'russian',
       display: 'Russian',
       flag: 'ru'
     },
@@ -46,7 +47,7 @@ module.exports = {
     '.DS_Store'
   ],
   REQUEST_TIMEOUT: 1.8e+6,
-  VIS_TREEMAP_MODE: 'circlePack' // valid options are: squarify, resquarify, slice, dice, slicedice, binary, circlePack, partition, partition-pivot
+  VIS_TREEMAP_MODE: 'binary' // valid options are: squarify, resquarify, slice, dice, slicedice, binary, circlePack, partition, partition-pivot
 };
 EOT
 
