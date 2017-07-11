@@ -21,6 +21,7 @@ cat <<EOT >> config.json
     "port":5000,
     "platform":"Linux",
     "butler_index":"butler",
+    "page_threads":1,
     "start_num_pages":1,
     "silos":[],
     "chrome_loc":"/usr/bin/google-chrome"
