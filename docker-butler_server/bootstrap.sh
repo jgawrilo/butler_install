@@ -24,6 +24,10 @@ cat <<EOT >> config.json
     "page_threads":1,
     "start_num_pages":1,
     "silos":[],
+    "star_search_url":"https://api",
+    "star_search":false,
+    "star_search_auth_u":"user",
+    "star_search_auth_p":"pass",
     "chrome_loc":"/usr/bin/google-chrome"
 }
 EOT
