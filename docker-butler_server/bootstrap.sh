@@ -28,7 +28,11 @@ cat <<EOT >> config.json
     "star_search":false,
     "star_search_auth_u":"user",
     "star_search_auth_p":"pass",
-    "chrome_loc":"/usr/bin/google-chrome"
+    "chrome_loc":"/usr/bin/google-chrome",
+    "cdr_search":false,
+    "cdr_url":"https://api",
+    "cdr_u":"uname",
+    "cdr_p":"pass"
 }
 EOT
 
