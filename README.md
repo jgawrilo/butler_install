@@ -15,7 +15,9 @@ At a high level, Butler depends on four software projects:
 4) [Butler UI](https://bitbucket.org/blueridgedynamics/butler) (User interface)
 
 ### Full Docker (Recommended Installation for testing)
-This installation works with Linux and OS X and requires [Docker](https://docs.docker.com/engine/installation/),[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your machine.  It has been tested with Version 17.09.0.
+This installation works with Linux and OS X and requires [Docker](https://docs.docker.com/engine/installation/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your machine.  It has been tested with Version 17.09.0.
+
+It is recommended to configure Docker with 2 CPUs and 8 GB of Memory for basic use.
 
 This installation runs each of the four software components listed above in a separate docker container.
 
@@ -26,18 +28,23 @@ This installation runs each of the four software components listed above in a se
 
 #### Quick Docker Install
 ```
+# Go get the project!
 git clone https://github.com/jgawrilo/butler_install.git
-cd butler_install
-./install.sh (You want to install the app!)
 
-# To start all containers (You want to use the app!)
+# Move into the project directory!
+cd butler_install
+
+# Install the full app!
+./install.sh
+
+# Start the app (all containers) for use/testing!
 ./start.sh
 
-# Try http://localhost:3000 in browser
+# Head to http://localhost:3000 in your browser.
+# Use the application! 
+# See 'Testing' below if you don't know what to do.  Go ahead! Try it out!
 
-# Use the application! See 'Testing' below if you don't know what to do.  Try it out!
-
-# To stop all containers (You're done using the app!)
+# Stop the app (all containers) when you're done!
 ./stop.sh 
 ```
 
