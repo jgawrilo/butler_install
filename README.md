@@ -9,17 +9,22 @@ The primary use case is to help analysts whose job it is to begin with small pie
 ### Dependencies
 At a high level, Butler depends on four software projects:
 
-1) CoreNLP Server (hosted on port 9000 by default)
-2) Elasticsearch Database (hosted on port 9200 by default)
-3) Butler Server (hosted on port 5000 by default)
-4) Butler UI (hosted on port 3000 by default)
+1) [CoreNLP Server](https://stanfordnlp.github.io/CoreNLP/corenlp-server.html) (used for entity and information extraction)
+2) [Elasticsearch](https://www.elastic.co/products/elasticsearch) (used as the application database)
+3) [Butler Server](https://github.com/jgawrilo/butler_server) (scraping, analytic, and data processing component)
+4) [Butler UI](https://bitbucket.org/blueridgedynamics/butler) (User interface)
 
 ### Full Docker (Recommended Installation for testing)
-This installation requires (Docker)https://docs.docker.com/engine/installation/ and git on your machine.  It has been tested with Version 17.09.0.
+This installation works with Linux and OS X and requires [Docker](https://docs.docker.com/engine/installation/),[Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your machine.  It has been tested with Version 17.09.0.
 
 This installation runs each of the four software components listed above in a separate docker container.
 
-To install:
+1) CoreNLP Server runs on port 9000.
+2) Elasticsearch runs on port 9200.
+3) Butler Server runs on port 5000.
+4) Butler UI runs on port 3000.
+
+#### Quick Docker Install
 ```
 git clone https://github.com/jgawrilo/butler_install.git
 cd butler_install
