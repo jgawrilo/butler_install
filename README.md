@@ -1,6 +1,8 @@
 ## Overview
 Butler is a web-based Know Your Customer (KYC) application meant to assist in slot-filling an entity profile via human-in-the-loop feedback and a simple search query capable of hitting the open and dark web as well as enterprise search repositories.
 
+It's capable of leveraging SRI's Lighthouse Search backend for free text search and information correlation. 
+
 ![Butler in Action](https://github.com/jgawrilo/butler_install/raw/master/docs/butler_main.png "Butler - Search in Action")
 
 ### Use Cases
@@ -62,7 +64,11 @@ cd butler_install
 
 ## Optional Configuration
 
-TODO
+### Endpoint Configuration
+
+### Dark Web Search or Enterprise Elasticsearch hook up
+
+### Scaling out search infrastructure and page scraping
 
 ## User Manual
 Please download this brief to understand more details about the application: [Butler Cheat Sheet](https://github.com/jgawrilo/butler_install/raw/master/docs/Butler_Cheat_Sheet_Open.pptx)
