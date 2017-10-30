@@ -32,7 +32,9 @@ cat <<EOT >> config.json
     "cdr_search":false,
     "cdr_url":"https://api",
     "cdr_u":"uname",
-    "cdr_p":"pass"
+    "cdr_p":"pass",
+    "search_boxes":[],
+    "reg_key":"",
 }
 EOT
 
