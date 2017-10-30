@@ -34,7 +34,7 @@ cat <<EOT >> config.json
     "cdr_u":"uname",
     "cdr_p":"pass",
     "search_boxes":[],
-    "reg_key":"",
+    "reg_key":""
 }
 EOT
 
