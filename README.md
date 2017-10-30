@@ -1,6 +1,8 @@
 ## Overview
 Butler is a web-based Know Your Customer (KYC) application meant to assist in slot-filling an entity profile via human-in-the-loop feedback and a simple search query capable of hitting the open and dark web as well as enterprise search repositories.
 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
 ### Use Cases
 The primary use case is to help analysts whose job it is to begin with small piece of information such as a phone number or user handle and understand the complete profile of the entity or persona.  Often times Google search and a speadsheet is used and there exists few tools that aggregate and analyze search results such that the relevant profile information is captured.  Often there is also ambiguity with regards to resolving an entity - Butler is designed to cluster pages in an attempt to group pages and information that is more similar together.
 
