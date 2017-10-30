@@ -32,7 +32,6 @@ This installation runs each of the four software components listed above in a se
 3) Butler Server runs on port 5000.
 4) Butler UI runs on port 3000.
 
-#### Quick Docker Install
 ```
 # Go get the project!
 git clone https://github.com/jgawrilo/butler_install.git
