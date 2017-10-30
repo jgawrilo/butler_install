@@ -1,3 +1,21 @@
+## Overview
+
+### Use Cases
+
+## Installation
+
+### Dependencies
+
+### Full Docker
+
+### Partial Docker
+
+## Testing
+
+## Optional Configuration
+
+## User Manual
+
 # Butler Docker Installation (includes corenlp, elasticsearch, butler server, and butler ui)
 ## Requires Docker -  https://docs.docker.com/engine/installation/
 ```
