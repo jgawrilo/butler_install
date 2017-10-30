@@ -4,11 +4,9 @@ Butler is a web-based Know Your Customer (KYC) application meant to assist in sl
 ![Butler in Action](https://github.com/jgawrilo/butler_install/raw/master/docs/butler_main.png "Butler - Search in Action")
 
 ### Use Cases
-The primary use case is to help analysts whose job it is to begin with small piece of information such as a phone number or user handle and understand the complete profile of the entity or persona.  
-![Butler Profile](https://github.com/jgawrilo/butler_install/raw/master/docs/butler_profile.png "Butler - Profile")
+The primary use case is to help analysts whose job it is to begin with small piece of information such as a phone number or user handle and understand the complete profile of the entity or persona.  Often times Google search and a speadsheet is used and there exists few tools that aggregate and analyze search results such that the relevant profile information is captured.  Often there is also ambiguity with regards to resolving an entity - Butler is designed to cluster pages in an attempt to group pages and information that is more similar together.
 
-Often times Google search and a speadsheet is used and there exists few tools that aggregate and analyze search results such that the relevant profile information is captured.  
-Often there is also ambiguity with regards to resolving an entity - Butler is designed to cluster pages in an attempt to group pages and information that is more similar together.
+![Butler Profile](https://github.com/jgawrilo/butler_install/raw/master/docs/butler_profile.png "Butler - Profile")
 
 ## Installation
 
@@ -46,9 +44,7 @@ cd butler_install
 # Start the app (all containers) for use/testing!
 ./start.sh
 
-# Head to http://localhost:3000 in your browser.
-# Use the application! 
-# See 'Testing' below if you don't know what to do.  Go ahead! Try it out!
+# Head to http://localhost:3000 in your browser. Use the application! See 'Testing' below if you don't know what to do.  Go ahead! Try it out!
 
 # Stop the app (all containers) when you're done!
 ./stop.sh 
@@ -59,7 +55,8 @@ cd butler_install
 ## Optional Configuration
 
 ## User Manual
+Please download this brief to understand more details about the application: [Butler Cheat Sheet](https://github.com/jgawrilo/butler_install/raw/master/docs/Butler_Cheat_Sheet_Open.pptx)
 
 ## License and Acknowledgements
-Apache-2.0
+Apache-2.0 
 Developed under the DARPA Memex program.
