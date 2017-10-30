@@ -4,7 +4,11 @@ Butler is a web-based Know Your Customer (KYC) application meant to assist in sl
 ![Butler in Action](https://github.com/jgawrilo/butler_install/raw/master/docs/butler_main.png "Butler - Search in Action")
 
 ### Use Cases
-The primary use case is to help analysts whose job it is to begin with small piece of information such as a phone number or user handle and understand the complete profile of the entity or persona.  Often times Google search and a speadsheet is used and there exists few tools that aggregate and analyze search results such that the relevant profile information is captured.  Often there is also ambiguity with regards to resolving an entity - Butler is designed to cluster pages in an attempt to group pages and information that is more similar together.
+The primary use case is to help analysts whose job it is to begin with small piece of information such as a phone number or user handle and understand the complete profile of the entity or persona.  
+![Butler Profile](https://github.com/jgawrilo/butler_install/raw/master/docs/butler_profile.png "Butler - Profile")
+
+Often times Google search and a speadsheet is used and there exists few tools that aggregate and analyze search results such that the relevant profile information is captured.  
+Often there is also ambiguity with regards to resolving an entity - Butler is designed to cluster pages in an attempt to group pages and information that is more similar together.
 
 ## Installation
 
