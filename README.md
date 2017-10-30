@@ -69,6 +69,15 @@ cd butler_install
 
 ### Scaling out search infrastructure and page scraping
 
+It's possible to speed up the search and scraping aspect of Butler by installing [gg](https://github.com/jgawrilo/gg/) on separate servers and then adding those endpoints to the [butler_server config.json](https://github.com/jgawrilo/butler_server/blob/master/config.json.template).
+
+Doing this will essentially distribute the search to these servers and will limit the calls any one server will receive.
+
+E.g., 
+```
+"search_boxes":["http://40.167.321.126:7777/get_urls"]
+```
+
 ## User Manual
 Please download this brief to understand more details about the application: [Butler Cheat Sheet](https://github.com/jgawrilo/butler_install/raw/master/docs/Butler_Cheat_Sheet_Open.pptx)
 
